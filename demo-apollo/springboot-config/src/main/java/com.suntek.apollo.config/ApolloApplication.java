@@ -23,7 +23,7 @@ import java.util.Objects;
 
 @Slf4j
 @EnableSwagger2
-@EnableApolloConfig
+@EnableApolloConfig(value = {"application.yml","application"})
 @SpringBootApplication
 public class ApolloApplication {
     public static void main(String[] args) {

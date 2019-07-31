@@ -70,7 +70,7 @@ public class SampleRedisConfig {
 
     @PostConstruct
     private void initialize() {
-        logger.info(
+        logger.debug(
                 "SampleRedisConfig initialized - expireSeconds: {}, clusterNodes: {}, commandTimeout: {}, someMap: {}, someList: {}",
                 expireSeconds, clusterNodes, commandTimeout, someMap, someList);
     }
