@@ -1,0 +1,11 @@
+app:
+  id: redis
+apollo:
+  meta: http://172.25.20.143:8080
+  bootstrap:
+    enabled: true
+    # will inject 'application' and 'TEST1.apollo' namespaces in bootstrap phase
+    namespaces: application.yaml,suntek.application
+#spring:
+#  profiles:
+#    active: dev

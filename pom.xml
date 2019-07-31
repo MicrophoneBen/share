@@ -7,7 +7,7 @@
     <groupId>com.share</groupId>
     <artifactId>share</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <modules>
         <module>demo-apollo</module>
         <module>demo-project</module>
