@@ -1,0 +1,17 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /log4j2
+
+spring:
+  profiles:
+    active: default
+---
+
+spring:
+  profiles: default
+
+logging:
+  config: classpath:log4j2-spring.xml
+
+
