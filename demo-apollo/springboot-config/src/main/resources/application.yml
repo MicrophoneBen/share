@@ -3,9 +3,15 @@ apollo:
   bootstrap:
     enabled: true
     # will inject 'application' and 'TEST1.apollo' namespaces in bootstrap phase
-    namespaces: application.yml,application
-#spring:
-#  profiles:
+    namespaces: application.yml,application,suntek.console
+spring:
+  devtools:
+    livereload:
+      port: 30980
+      enabled: true
+  profiles:
+    active: prod
 server:
   port: 8089
-#    active: dev
+# 数据库授权
+#  grant all on *.* to admin@'%' identified by 'suntek';

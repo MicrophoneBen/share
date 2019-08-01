@@ -51,7 +51,6 @@ import java.util.Map;
  * To make <code>@ConditionalOnProperty</code> work properly, <code>apollo.bootstrap.enabled</code> should be set to true
  * and <code>redis.cache.enabled</code> should also be set to true. Check 'src/main/resources/application.yml' for more information.
  *
- * @author Jason Song(song_s@ctrip.com)
  */
 @ConditionalOnProperty("redis.cache.enabled")
 @ConfigurationProperties(prefix = "redis.cache")
