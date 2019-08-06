@@ -230,9 +230,9 @@ TRACE,DEBUG,INFO,WARN,ERROR,ALL,OFF还有一个特殊值INHERITED代表强制执
 日志级别从左往右是从高到低
 如果未设置此属性，那么当前logger将会继承上级的级别。
 3.additivity:是否向上级logger传递打印信息。默认是true。
-(1)当 additivity 为 false 且 logger 中配置了 appender-ref 时,logger 将会在方法运行时打印日志
-(2)当 additivity 为 true 且 logger 中配置 appender-ref 时,logger 会在方法运行时打印一次日志,并在上级logger打印一次日志
-(3)当 additivity 为 true 且 logger 中没关联 appender-ref 时,logger 会在把日志传递到上级logger,并在上级打印一次日志
+	(1)当 additivity 为 false 且 logger 中配置了 appender-ref 时,logger 将会在方法运行时打印日志
+	(2)当 additivity 为 true 且 logger 中配置 appender-ref 时,logger 会在方法运行时打印一次日志,并在上级logger打印一次日志
+	(3)当 additivity 为 true 且 logger 中没关联 appender-ref 时,logger 会在把日志传递到上级logger,并在上级打印一次日志
 4.root节点和logger节点其实都是表示Logger组件。个人觉的可以把他们之间的关系可以理解为父子关系，root是最顶层的logger，正常情况getLogger("name/class")没有找到对应logger的情况下，都是使用root节点配置的logger。-->
         <root level="WARN">
             <appender-ref ref="consoleLog"/>
