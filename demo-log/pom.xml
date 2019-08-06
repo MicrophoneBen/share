@@ -9,11 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.share</groupId>
     <artifactId>demo-log</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>demo-log4j</module>
         <module>demo-log4j2</module>
         <module>demo-logback</module>
     </modules>
