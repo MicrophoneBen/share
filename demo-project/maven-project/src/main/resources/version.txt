@@ -1,0 +1,2 @@
+version = ${project.version}.${svn.committedRevision}
+db.version = ${db.version}
