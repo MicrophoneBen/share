@@ -3,8 +3,8 @@
 项目示例
 
 # plugin-git
-利用插件git-commit-id-plugin来获取项目提交版本号
-1.在<build>中添加
+利用插件git-commit-id-plugin来获取项目提交版本号\
+1.在\<build>中添加如下内容
   ````
     <resources>
     	<resource>
@@ -47,11 +47,12 @@
    version = ${project.version}.${git.commit.id.abbrev}
   ````
  2）若项目使用了spring-boot-starter-parent做项目版本管理,且版本后1.3之后，
-    需要替换resource.delimiter属性，需要在<properties>中添加
+    需要替换resource.delimiter属性，需要在\<properties>中添加
      ```` 
       <resource.delimiter>${}</resource.delimiter>
     ````
- 3）在<build>中添加
+    
+ 3）在\<build>中添加
    ````
      <resources>
      	<resource>
@@ -60,8 +61,8 @@
      	</resource>
      </resources>
    ````
-   用来过滤src/main/resources下的文件中的${}
- 4）在<build><plugins>内添加git-commit-id-plugin插件配置
+   用来过滤src/main/resources下的文件中的${}\
+   4）在\<build>\<plugins>内添加git-commit-id-plugin插件配置
  ````
    <plugin>
              <groupId>pl.project13.maven</groupId>
@@ -158,11 +159,11 @@
 version = ${project.version}.${svn.committedRevision}
 ````
 2.若项目使用了spring-boot-starter-parent做项目版本管理,且版本后1.3之后，
-需要替换resource.delimiter属性，需要在<properties>中添加
+需要替换resource.delimiter属性，需要在\<properties>中添加
  ```` 
   <resource.delimiter>${}</resource.delimiter>
 ````
-3.在<build>中添加
+3.在\<build>中添加
 ````
   <resources>
   	<resource>
@@ -171,7 +172,7 @@ version = ${project.version}.${svn.committedRevision}
   	</resource>
   </resources>
 ````
-4.在<build><plugins>内添加相关插件
+4.在\<build>\<plugins>内添加相关插件
 ````
 <plugin>
 	<groupId>com.google.code.maven-svn-revision-number-plugin</groupId>
@@ -235,7 +236,7 @@ version = ${project.version}.${svn.committedRevision}
 	</executions>
 </plugin>
 ````
-5. 打包后，查看version.txt文件
+5.打包后，查看version.txt文件
 
 ## 打war包获取svn提交代码版本号
 1.方式和maven打jar包配置一样，唯一不同的是插件maven-jar-plugin改成maven-war-plugin，配置内容如下：
